@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local tooling
+/.claude/
+
+# large video source (converted output is committed as public/hero.mp4)
+/img/

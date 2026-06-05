@@ -141,7 +141,12 @@ export default function Home() {
 
       {/* ⑥ 想い・社訓 */}
       <section className="relative overflow-hidden bg-navy-950 text-white">
-        <div className="mx-auto max-w-3xl px-5 py-24 text-center">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${asset("/staff.webp")})` }}
+        />
+        <div className="absolute inset-0 bg-navy-950/65" />
+        <div className="relative mx-auto max-w-3xl px-5 py-24 text-center">
           <p className="text-xs tracking-[0.3em] text-amber-accent">OUR CREDO</p>
           <p className="mt-8 text-2xl font-bold leading-relaxed md:text-3xl">
             {CREDO.message}

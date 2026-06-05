@@ -22,14 +22,16 @@ export default function Home() {
           <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-navy-900/15 bg-white/50 px-4 py-1.5 text-xs tracking-wider text-navy-700">
             {COMPANY.area}・大規模重機土木工事
           </p>
-          <h1 className="text-4xl font-bold leading-tight tracking-tight md:text-6xl">
-            近畿の地図を、
+          <h1 className="text-3xl font-bold leading-snug tracking-tight md:text-5xl">
+            誠実に、真面目に、前向きに、諦めない心で。
             <br />
-            <span className="text-amber-accent-dark">つくり変える。</span>
+            <span className="text-amber-accent-dark">
+              地域に貢献できる仕事を目指しています。
+            </span>
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-navy-800/90 md:text-lg">
-            道路も、河川も、まちの土台も。65年超、近畿の大規模土木を支えてきた
-            {COMPANY.name}で、社会に残る仕事をしませんか。
+            道路も、河川も、まちの土台づくりも。65年以上、近畿の暮らしを足元から
+            支えてきた{COMPANY.name}で、一緒に働きませんか。
           </p>
           <a
             href="#jobs"

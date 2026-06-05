@@ -16,13 +16,13 @@ export default function Home() {
         >
           <source src={asset("/hero.mp4")} type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-r from-white/95 from-5% via-white/65 via-40% to-transparent to-72%" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white from-0% via-white/80 via-48% to-transparent to-82%" />
         <div className="absolute inset-0 bg-gradient-to-t from-white/70 via-transparent to-transparent" />
         <div className="relative mx-auto flex max-w-6xl flex-col items-start px-5 py-28 md:py-36">
           <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-navy-900/15 bg-white/50 px-4 py-1.5 text-xs tracking-wider text-navy-700">
             {COMPANY.area}・大規模重機土木工事
           </p>
-          <h1 className="text-3xl font-bold leading-snug tracking-tight md:text-5xl">
+          <h1 className="max-w-2xl text-2xl font-bold leading-snug tracking-tight md:text-4xl">
             誠実に、真面目に、前向きに、諦めない心で。
             <br />
             <span className="text-amber-accent-dark">

@@ -53,7 +53,7 @@ export default function Home() {
           <SectionHeading
             en="OUR JOBS"
             ja="あなたの仕事を、選ぶ"
-            sub="大和建設では、大きく2つの職種で仲間を募集しています。気になる仕事の専用ページで、もっと深く知ってください。"
+            sub="大和建設では、3つの職種で仲間を募集しています。気になる仕事の専用ページで、もっと深く知ってください。"
           />
           <div className="mt-12">
             <JobCards />

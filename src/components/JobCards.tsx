@@ -2,13 +2,15 @@ import { JOBS } from "@/lib/site";
 
 export default function JobCards() {
   return (
-    <div className="grid gap-6 md:grid-cols-2">
-      {JOBS.map((job) => (
+    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {JOBS.map((job) => {
+        const external = job.href.startsWith("http");
+        return (
         <a
           key={job.id}
           href={job.href}
-          target="_blank"
-          rel="noopener noreferrer"
+          target={external ? "_blank" : undefined}
+          rel={external ? "noopener noreferrer" : undefined}
           className="group relative flex flex-col overflow-hidden rounded-2xl border border-navy-700 bg-gradient-to-br from-navy-900 to-navy-950 p-8 shadow-lg ring-1 ring-amber-accent/0 transition duration-200 hover:-translate-y-1.5 hover:shadow-2xl hover:ring-amber-accent/60 md:p-9"
         >
           <span className="absolute inset-x-0 top-0 h-1.5 bg-amber-accent" />
@@ -41,7 +43,8 @@ export default function JobCards() {
             <span className="transition group-hover:translate-x-1">→</span>
           </span>
         </a>
-      ))}
+        );
+      })}
     </div>
   );
 }

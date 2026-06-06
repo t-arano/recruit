@@ -34,6 +34,15 @@ export const JOBS: Job[] = [
     href: "https://media.daiwakensetsu-k.jp/lp2/",
   },
   {
+    id: "dump",
+    title: "10tダンプドライバー",
+    lead: "まちの土台を、運ぶ。",
+    description:
+      "長距離なし・地場配送のみ。大阪の現場を相棒の専用ダンプでいったり来たり。夜はちゃんと家に帰れる、無理なく長く続けられる仕事です。",
+    tags: ["長距離なし", "毎日帰れる", "未経験OK", "ブランクOK"],
+    href: `${BASE_PATH}/dump/`,
+  },
+  {
     id: "kanri",
     title: "施工管理・現場監督",
     lead: "一生に残る構造物を、つくる。",

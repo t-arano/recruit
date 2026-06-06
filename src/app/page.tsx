@@ -62,8 +62,13 @@ export default function Home() {
       </section>
 
       {/* ③ 数字で見る */}
-      <section className="bg-navy-900 text-white">
-        <div className="mx-auto max-w-6xl px-5 py-20">
+      <section className="relative overflow-hidden bg-navy-900 text-white">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${asset("/business-detail01.jpg")})` }}
+        />
+        <div className="absolute inset-0 bg-navy-950/50" />
+        <div className="relative mx-auto max-w-6xl px-5 py-20">
           <p className="text-center text-xs tracking-[0.3em] text-amber-accent">
             DAIWA IN NUMBERS
           </p>

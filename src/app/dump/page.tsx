@@ -115,8 +115,8 @@ export default function DumpPage() {
         <div className="mx-auto max-w-6xl px-5 py-20 md:py-24">
           <SectionHeading
             en="THE WORK"
-            ja="1日の仕事は、現場と処分場の往復。"
-            sub="大阪府内の建設現場（道路・造成工事など）を中心に、土砂や建設資材を運びます。現場から処分場へ、処分場から現場へ。まちづくりの「動脈」を担う仕事です。"
+            ja="道路も、造成も。舞台は、大阪じゅうの現場。"
+            sub="大阪府内の建設現場（道路・造成工事など）で、土砂や建設資材の運搬を担います。運ぶのは地場のみ、長距離はありません。慣れた道で、まちづくりの「動脈」を支える仕事です。"
           />
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[

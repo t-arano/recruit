@@ -65,16 +65,10 @@ export default function DumpPage() {
     <div id="top">
       {/* ① ヒーロー */}
       <section className="relative overflow-hidden bg-navy-950 text-white">
-        <video
-          className="absolute inset-0 h-full w-full object-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster={asset("/hero-poster.jpg")}
-        >
-          <source src={asset("/hero.mp4")} type="video/mp4" />
-        </video>
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${asset("/dump-hero.jpg")})` }}
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-navy-950 from-5% via-navy-950/85 via-45% to-navy-950/30" />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent" />
         <div className="relative mx-auto flex max-w-6xl flex-col items-start px-5 py-28 md:py-40">

@@ -33,13 +33,14 @@ const APPEALS = [
   },
 ];
 
-const SCHEDULE = [
-  { time: "8:00", title: "出社・現場へ", body: "車両点検をして、その日の現場へ出発します。" },
-  { time: "8:30", title: "運搬スタート", body: "現場と処分場の間を数往復。土砂や資材を運びます。" },
-  { time: "12:00", title: "昼休憩", body: "しっかり休んで、午後に備えます。" },
-  { time: "13:00", title: "午後の運搬", body: "引き続き、近距離中心で運搬業務。" },
-  { time: "17:00", title: "帰社・退社", body: "車両を清掃して、その日は終了。夜は自分の時間です。" },
-];
+// 「ある1日の流れ」セクションは現在非表示。再表示時はこの定義と下部の <section> のコメントを外す。
+// const SCHEDULE = [
+//   { time: "8:00", title: "出社・現場へ", body: "車両点検をして、その日の現場へ出発します。" },
+//   { time: "8:30", title: "運搬スタート", body: "現場と処分場の間を数往復。土砂や資材を運びます。" },
+//   { time: "12:00", title: "昼休憩", body: "しっかり休んで、午後に備えます。" },
+//   { time: "13:00", title: "午後の運搬", body: "引き続き、近距離中心で運搬業務。" },
+//   { time: "17:00", title: "帰社・退社", body: "車両を清掃して、その日は終了。夜は自分の時間です。" },
+// ];
 
 const REASONS = [
   {
@@ -183,8 +184,8 @@ export default function DumpPage() {
         </div>
       </section>
 
-      {/* ④ 1日の流れ */}
-      <section className="bg-navy-50">
+      {/* ④ 1日の流れ（非表示中：再表示するにはコメントを外す） */}
+      {/* <section className="bg-navy-50">
         <div className="mx-auto max-w-4xl px-5 py-20 md:py-24">
           <SectionHeading
             en="A DAY"
@@ -212,7 +213,7 @@ export default function DumpPage() {
             ))}
           </ol>
         </div>
-      </section>
+      </section> */}
 
       {/* ⑤ 相棒の車両 */}
       <section className="bg-white">
